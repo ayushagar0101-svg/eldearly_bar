@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elderly Nutrition Bar — Academic Food Formulation Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand">Elderly Nutrition Bar</a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#ingredients" class="nav-link">Ingredients</a>
+      <a href="#preparation" class="nav-link">Preparation</a>
+      <a href="#nutrition" class="nav-link">Nutrition</a>
+      <a href="#evaluation" class="nav-link">Evaluation</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO / VIDEO ============ -->
+<section class="hero" id="home">
+  <video class="hero-video" id="hero-video" autoplay muted loop playsinline poster="assets/nutrition-bar.jpg">
+    <source src="assets/elderly-nutrition-bar.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+
+  <button class="sound-toggle" id="sound-toggle" aria-label="Turn sound on">
+    <svg id="icon-muted" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 9v6h4l5 5V4L8 9H4zm11.5 3a3.5 3.5 0 0 0-1.98-3.15v6.29A3.49 3.49 0 0 0 15.5 12z"/></svg>
+    <svg id="icon-unmuted" viewBox="0 0 24 24" width="20" height="20" style="display:none"><path fill="currentColor" d="M4 9v6h4l5 5V4L8 9H4zm11.5 3a3.5 3.5 0 0 0-1.98-3.15v6.29A3.49 3.49 0 0 0 15.5 12zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+  </button>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">A Food Science &amp; Nutrition Formulation Study</p>
+    <h1 class="hero-title">Elderly<br>Nutrition Bar</h1>
+    <p class="hero-tagline">Nutritious. Convenient. Easy to Consume.</p>
+    <p class="hero-desc">A nutrient-dense, soft-textured food formulation developed with a combination of nuts, seeds, cereals and natural fruit-based ingredients.</p>
+    <a href="#about" class="btn-explore" id="explore-btn">Explore the Product <span class="arrow-down">↓</span></a>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container">
+    <p class="section-label">About the Product</p>
+    <h2 class="section-title">Why the Elderly Nutrition Bar Was Formulated</h2>
+
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <h3>A Changing Body, A Changing Diet</h3>
+        <p>Ageing is a natural and continuous process associated with gradual changes in physical, physiological and nutritional requirements. Changes in appetite, digestion, metabolism, physical activity, chewing ability and swallowing may affect food intake among older adults.</p>
+      </div>
+      <div class="about-card reveal">
+        <h3>A Soft, Nutrient-Dense Concept</h3>
+        <p>The Elderly Nutrition Bar is proposed as a convenient, nutrient-dense and soft-textured supplementary snack designed to provide a combination of energy, protein, healthy fats, carbohydrates, dietary fibre, vitamins and minerals.</p>
+      </div>
+      <div class="about-card reveal">
+        <h3>Built From Whole Ingredients</h3>
+        <p>The formulation combines nuts, seeds, ragi, protein oats, dates, raisins, moringa, amla powder and cinnamon — chosen for both nutritional contribution and natural binding properties.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY THIS PRODUCT ============ -->
+<section class="section why">
+  <div class="container">
+    <p class="section-label">Why This Product</p>
+    <h2 class="section-title">Formulated With Purpose</h2>
+
+    <div class="feature-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">◆</div>
+        <h3>Nutrient Dense</h3>
+        <p>Contains a combination of nuts, seeds, cereals and plant-based ingredients.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">●</div>
+        <h3>Easy to Consume</h3>
+        <p>Designed with a soft and cohesive texture suitable for easier chewing.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">✦</div>
+        <h3>Natural Ingredients</h3>
+        <p>Uses dates and raisins for natural sweetness and binding.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">▢</div>
+        <h3>Convenient</h3>
+        <p>Compact, portion-controlled and suitable as a supplementary snack.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INGREDIENTS ============ -->
+<section class="section ingredients" id="ingredients">
+  <div class="container">
+    <p class="section-label">Formulation Components</p>
+    <h2 class="section-title">Ingredients</h2>
+
+    <div class="ingredient-groups">
+
+      <div class="ingredient-group reveal">
+        <h3 class="group-title">Nuts</h3>
+        <div class="chip-grid">
+          <span class="chip">Peanuts</span>
+          <span class="chip">Almonds</span>
+          <span class="chip">Cashews</span>
+          <span class="chip">Walnuts</span>
+          <span class="chip">Pistachios</span>
+        </div>
+      </div>
+
+      <div class="ingredient-group reveal">
+        <h3 class="group-title">Seeds</h3>
+        <div class="chip-grid">
+          <span class="chip">Sesame Seeds</span>
+          <span class="chip">Flax Seeds</span>
+          <span class="chip">Hemp Seeds</span>
+          <span class="chip">Sunflower Seeds</span>
+          <span class="chip">Chia Seeds</span>
+        </div>
+      </div>
+
+      <div class="ingredient-group reveal">
+        <h3 class="group-title">Cereals</h3>
+        <div class="chip-grid">
+          <span class="chip">Ragi</span>
+          <span class="chip">Protein Oats</span>
+        </div>
+      </div>
+
+      <div class="ingredient-group reveal">
+        <h3 class="group-title">Natural Fruit Ingredients</h3>
+        <div class="chip-grid">
+          <span class="chip">Dates</span>
+          <span class="chip">Raisins</span>
+        </div>
+      </div>
+
+      <div class="ingredient-group reveal">
+        <h3 class="group-title">Plant-Based Ingredients</h3>
+        <div class="chip-grid">
+          <span class="chip">Moringa Powder</span>
+          <span class="chip">Amla Powder</span>
+          <span class="chip">Cinnamon</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMULATION FLOW ============ -->
+<section class="section formulation">
+  <div class="container">
+    <p class="section-label">Formulation Concept</p>
+    <h2 class="section-title">Product Formulation Flow</h2>
+
+    <div class="flow-diagram">
+      <div class="flow-step reveal"><span>Ingredient Selection</span></div>
+      <div class="flow-step reveal"><span>Cleaning &amp; Sorting</span></div>
+      <div class="flow-step reveal"><span>Roasting</span></div>
+      <div class="flow-step reveal"><span>Cooling</span></div>
+      <div class="flow-step reveal"><span>Grinding</span></div>
+      <div class="flow-step reveal"><span>Date–Raisin Binding Mixture</span></div>
+      <div class="flow-step reveal"><span>Mixing</span></div>
+      <div class="flow-step reveal"><span>Forming</span></div>
+      <div class="flow-step reveal"><span>Setting &amp; Cooling</span></div>
+      <div class="flow-step reveal"><span>Packaging</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREPARATION ============ -->
+<section class="section preparation" id="preparation">
+  <div class="container">
+    <p class="section-label">Process</p>
+    <h2 class="section-title">Preparation Process</h2>
+
+    <div class="steps-list">
+      <div class="step-row reveal">
+        <div class="step-num">1</div>
+        <div class="step-text">
+          <h3>Selection and Weighing</h3>
+          <p>Ingredients are selected and weighed according to the formulation.</p>
+        </div>
+      </div>
+      <div class="step-row reveal">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          <h3>Cleaning and Sorting</h3>
+          <p>Ingredients are checked and cleaned to remove unwanted materials.</p>
+        </div>
+      </div>
+      <div class="step-row reveal">
+        <div class="step-num">3</div>
+        <div class="step-text">
+          <h3>Roasting</h3>
+          <p>Nuts and seeds are roasted appropriately to improve flavour and aroma.</p>
+        </div>
+      </div>
+      <div class="step-row reveal">
+        <div class="step-num">4</div>
+        <div class="step-text">
+          <h3>Cooling and Grinding</h3>
+          <p>The roasted ingredients are cooled and ground to achieve a suitable texture.</p>
+        </div>
+      </div>
+      <div class="step-row reveal">
+        <div class="step-num">5</div>
+        <div class="step-text">
+          <h3>Binding Mixture</h3>
+          <p>Dates and raisins are processed into a fruit-based mixture that acts as a natural binder.</p>
+        </div>
+      </div>
+      <div class="step-row reveal">
+        <div class="step-num">6</div>
+        <div class="step-text">
+          <h3>Mixing</h3>
+          <p>Ground ingredients are combined with ragi, protein oats, moringa, amla and cinnamon.</p>
+        </div>
+      </div>
+      <div class="step-row reveal">
+        <div class="step-num">7</div>
+        <div class="step-text">
+          <h3>Forming</h3>
+          <p>The mixture is pressed and shaped into bars.</p>
+        </div>
+      </div>
+      <div class="step-row reveal">
+        <div class="step-num">8</div>
+        <div class="step-text">
+          <h3>Setting and Packaging</h3>
+          <p>The bars are allowed to set, cooled and individually packaged.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEXTURE ============ -->
+<section class="section texture">
+  <div class="container texture-inner">
+    <div class="texture-text reveal">
+      <p class="section-label">Texture &amp; Product Design</p>
+      <h2 class="section-title">Designed for Easy Chewing</h2>
+      <p>Some elderly individuals may experience dental or chewing difficulties. The proposed bar is therefore designed with these qualities in mind:</p>
+      <ul class="texture-list">
+        <li>Soft texture</li>
+        <li>Cohesive structure</li>
+        <li>Easy-to-chew consistency</li>
+        <li>Pleasant mouthfeel</li>
+      </ul>
+    </div>
+    <div class="texture-visual reveal" aria-hidden="true">
+      <div class="bar-shape"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NUTRITIONAL COMPOSITION ============ -->
+<section class="section nutrition" id="nutrition">
+  <div class="container">
+    <p class="section-label">Nutritional Concept</p>
+    <h2 class="section-title">Nutritional Composition</h2>
+
+    <div class="nutrient-grid">
+      <div class="nutrient-card reveal">
+        <h3>Protein</h3>
+        <p>Supports normal body functions and contributes to the nutrient density of the product.</p>
+      </div>
+      <div class="nutrient-card reveal">
+        <h3>Healthy Fats</h3>
+        <p>Provided mainly by nuts and seeds.</p>
+      </div>
+      <div class="nutrient-card reveal">
+        <h3>Dietary Fibre</h3>
+        <p>Contributed by nuts, seeds, cereals and fruit ingredients.</p>
+      </div>
+      <div class="nutrient-card reveal">
+        <h3>Carbohydrates</h3>
+        <p>Provided by ingredients such as ragi, oats, dates and raisins.</p>
+      </div>
+      <div class="nutrient-card reveal">
+        <h3>Plant-Based Nutrients</h3>
+        <p>Moringa and amla add plant-based components to the formulation.</p>
+      </div>
+    </div>
+    <p class="nutrition-note">Composition described conceptually based on ingredient function. Specific nutritional values are not stated unless obtained through laboratory analysis.</p>
+  </div>
+</section>
+
+<!-- ============ EVALUATION ============ -->
+<section class="section evaluation" id="evaluation">
+  <div class="container">
+    <p class="section-label">Sensory Evaluation</p>
+    <h2 class="section-title">Product Evaluation</h2>
+    <p class="evaluation-intro">The parameters below represent an evaluation framework that could be used to assess the formulated bar. This is a demonstration interface, not actual experimental results.</p>
+
+    <div class="eval-panel reveal">
+      <div class="eval-params" id="eval-params">
+        <button class="eval-param active" data-param="Colour">Colour</button>
+        <button class="eval-param" data-param="Appearance">Appearance</button>
+        <button class="eval-param" data-param="Aroma">Aroma</button>
+        <button class="eval-param" data-param="Taste">Taste</button>
+        <button class="eval-param" data-param="Texture">Texture</button>
+        <button class="eval-param" data-param="Mouthfeel">Mouthfeel</button>
+        <button class="eval-param" data-param="Overall Acceptability">Overall Acceptability</button>
+      </div>
+
+      <div class="eval-rating-box">
+        <p class="eval-current-label">Rating for: <span id="eval-current-param">Colour</span></p>
+        <div class="eval-stars" id="eval-stars">
+          <button class="star" data-value="1">★</button>
+          <button class="star" data-value="2">★</button>
+          <button class="star" data-value="3">★</button>
+          <button class="star" data-value="4">★</button>
+          <button class="star" data-value="5">★</button>
+        </div>
+        <p class="eval-disclaimer">Demonstration only — this widget does not represent recorded experimental data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PACKAGING ============ -->
+<section class="section packaging">
+  <div class="container packaging-inner">
+    <div class="packaging-visual reveal" aria-hidden="true">
+      <div class="package-mock">
+        <div class="package-label">
+          <span class="package-brand">Elderly Nutrition Bar</span>
+          <span class="package-sub">Net Wt. — Academic Prototype</span>
+        </div>
+      </div>
+    </div>
+    <div class="packaging-text reveal">
+      <p class="section-label">Packaging</p>
+      <h2 class="section-title">Individual, Hygienic Packaging</h2>
+      <p>Individual packaging can help maintain hygiene, convenience and portion control. Each bar is envisioned as being wrapped separately, suited to single-serving supplementary use.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACADEMIC PROJECT ============ -->
+<section class="section academic">
+  <div class="container">
+    <p class="section-label">Academic Formulation Project</p>
+    <h2 class="section-title">A Learning Exercise in Food Science</h2>
+    <p class="academic-intro">This project provides an opportunity to study:</p>
+    <div class="academic-grid">
+      <span class="academic-item reveal">Food Formulation</span>
+      <span class="academic-item reveal">Ingredient Selection</span>
+      <span class="academic-item reveal">Food Processing</span>
+      <span class="academic-item reveal">Hygiene</span>
+      <span class="academic-item reveal">Texture Development</span>
+      <span class="academic-item reveal">Packaging</span>
+      <span class="academic-item reveal">Sensory Evaluation</span>
+      <span class="academic-item reveal">Product Acceptability</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="section final-cta">
+  <div class="container">
+    <h2 class="section-title light">From Natural Ingredients to a Convenient Nutrition Bar</h2>
+    <p class="final-cta-text">Combining nutrient-dense ingredients with thoughtful processing and texture design to create a convenient supplementary snack for older adults.</p>
+    <button class="btn-top" id="back-to-top">Back to Top <span class="arrow-up">↑</span></button>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="contact">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-brand">Elderly Nutrition Bar</p>
+      <p class="footer-sub">Academic Food Formulation Project</p>
+    </div>
+    <p class="footer-copy">© 2026 Elderly Nutrition Bar | Academic Project</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
